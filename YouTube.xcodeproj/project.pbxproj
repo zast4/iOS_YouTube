@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		A560988A2C74AAC100EFB77F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56098892C74AAC100EFB77F /* AppDelegate.swift */; };
 		A560988C2C74AAC100EFB77F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A560988B2C74AAC100EFB77F /* SceneDelegate.swift */; };
-		A560988E2C74AAC100EFB77F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A560988D2C74AAC100EFB77F /* ViewController.swift */; };
-		A56098912C74AAC100EFB77F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A560988F2C74AAC100EFB77F /* Main.storyboard */; };
 		A56098932C74AAC200EFB77F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56098922C74AAC200EFB77F /* Assets.xcassets */; };
-		A56098962C74AAC200EFB77F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56098942C74AAC200EFB77F /* LaunchScreen.storyboard */; };
 		A56098A12C74AAC300EFB77F /* YouTubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56098A02C74AAC300EFB77F /* YouTubeTests.swift */; };
 		A56098AB2C74AAC300EFB77F /* YouTubeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56098AA2C74AAC300EFB77F /* YouTubeUITests.swift */; };
 		A56098AD2C74AAC300EFB77F /* YouTubeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56098AC2C74AAC300EFB77F /* YouTubeUITestsLaunchTests.swift */; };
+		A56098BA2C74ABDC00EFB77F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56098B92C74ABDC00EFB77F /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +37,14 @@
 		A56098862C74AAC100EFB77F /* YouTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56098892C74AAC100EFB77F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A560988B2C74AAC100EFB77F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A560988D2C74AAC100EFB77F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A56098902C74AAC100EFB77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A56098922C74AAC200EFB77F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A56098952C74AAC200EFB77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56098972C74AAC200EFB77F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A560989C2C74AAC300EFB77F /* YouTubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56098A02C74AAC300EFB77F /* YouTubeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeTests.swift; sourceTree = "<group>"; };
 		A56098A62C74AAC300EFB77F /* YouTubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56098AA2C74AAC300EFB77F /* YouTubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeUITests.swift; sourceTree = "<group>"; };
 		A56098AC2C74AAC300EFB77F /* YouTubeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A56098B92C74ABDC00EFB77F /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +95,10 @@
 		A56098882C74AAC100EFB77F /* YouTube */ = {
 			isa = PBXGroup;
 			children = (
+				A56098BB2C74AFCE00EFB77F /* VideosModule */,
 				A56098892C74AAC100EFB77F /* AppDelegate.swift */,
 				A560988B2C74AAC100EFB77F /* SceneDelegate.swift */,
-				A560988D2C74AAC100EFB77F /* ViewController.swift */,
-				A560988F2C74AAC100EFB77F /* Main.storyboard */,
 				A56098922C74AAC200EFB77F /* Assets.xcassets */,
-				A56098942C74AAC200EFB77F /* LaunchScreen.storyboard */,
 				A56098972C74AAC200EFB77F /* Info.plist */,
 			);
 			path = YouTube;
@@ -125,6 +119,54 @@
 				A56098AC2C74AAC300EFB77F /* YouTubeUITestsLaunchTests.swift */,
 			);
 			path = YouTubeUITests;
+			sourceTree = "<group>";
+		};
+		A56098BB2C74AFCE00EFB77F /* VideosModule */ = {
+			isa = PBXGroup;
+			children = (
+				A56098BC2C74AFDB00EFB77F /* Router */,
+				A56098BD2C74AFDE00EFB77F /* Entity */,
+				A56098BE2C74AFE700EFB77F /* Interactor */,
+				A56098BF2C74AFEC00EFB77F /* Presenter */,
+				A56098C02C74AFF100EFB77F /* View */,
+			);
+			path = VideosModule;
+			sourceTree = "<group>";
+		};
+		A56098BC2C74AFDB00EFB77F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A56098BD2C74AFDE00EFB77F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A56098BE2C74AFE700EFB77F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A56098BF2C74AFEC00EFB77F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A56098C02C74AFF100EFB77F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A56098B92C74ABDC00EFB77F /* TestViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A56098962C74AAC200EFB77F /* LaunchScreen.storyboard in Resources */,
 				A56098932C74AAC200EFB77F /* Assets.xcassets in Resources */,
-				A56098912C74AAC100EFB77F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A560988E2C74AAC100EFB77F /* ViewController.swift in Sources */,
 				A560988A2C74AAC100EFB77F /* AppDelegate.swift in Sources */,
+				A56098BA2C74ABDC00EFB77F /* TestViewController.swift in Sources */,
 				A560988C2C74AAC100EFB77F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,25 +335,6 @@
 			targetProxy = A56098A72C74AAC300EFB77F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A560988F2C74AAC100EFB77F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A56098902C74AAC100EFB77F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A56098942C74AAC200EFB77F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A56098952C74AAC200EFB77F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A56098AE2C74AAC300EFB77F /* Debug */ = {
@@ -447,7 +468,6 @@
 				INFOPLIST_FILE = YouTube/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,7 +495,6 @@
 				INFOPLIST_FILE = YouTube/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
